@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Jarred Russell's Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Orbitron" />
+
+<style>
+#overlay{
+	position:fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	background-color: rgba(0,0,0,0.9);
+	z-index:2;
+}
+
+#about{
+	position:absolute;
+	top:50%;
+	left:50%;
+	color:white;
+	transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+}
+</style>
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!--
+  Please note: this code is in no way ready to be used as is in production on your website. It will need to be adapted to be cross browser compliant & accessible. I just wanted to share how one might go about this effect with CSS & JS and no other dependencies
+-->
+<div style="height:70px;">
+<ul class="menu">
+  <li><a href="#">J</a></li>
+  <li><a href="#">A</a></li>
+  <li><a href="#">R</a></li>
+  <li><a href="#">R</a></li>
+  <li><a href="#">E</a></li>
+  <li><a href="#">D</a></li>
+<!--<li><a href="#">R</a></li>
+  <li><a href="#">U</a></li>
+  <li><a href="#">S</a></li>
+  <li><a href="#">S</a></li>
+  <li><a href="#">E</a></li>
+  <li><a href="#">L</a></li>
+	<li><a href="#">L</a></li>-->
+  <li class="bg"></li>
+</ul>
+<div style="float: right; color:#fff; position:relative; top: -60px; right:32px;">
+		<a href="#"><button class="button" onclick="on()">About</button></a>|<a download="" href="img/Jarred_Russell_Resume_2022.pdf"><button class="button">Resume</button></a>|<a href="mailto:jarredr@icloud.com"><button class="button">Contact</button></a>
+	</div>
+</div>
+
+<div id="overlay" onclick="off()">
+
+<a href="#" class="close-content" style="margin:40px">
+	<span class="x-1"></span><span class="x-2"></span></a>
+	
+	<div id="about">
+		<h1>Jarred Russell</h1>
+		<img src="img/Jarred.jpg" alt="Jarred Russell's headshot" width="50%" height="auto" align="left" style="padding:0 25px 15px 0;">
+		I am a creative professional with 20+ year of design experience. My strengths include design strategy and creative direction. I enjoy blending art, technology, and data-based decision-making to drive creative results and improve performance. In my next role, I'm interested in building on my experience to manage a diverse cross-functional creative team.
+		<br>
+		<h3>Notes on the design</h3>
+		<b>Color:</b> Synesthesia is an experiance of one sense through another. In this case an association of letters with specific colors called grapheme-color synesthesia. Each letter of my perfered name is assigned its coresponding color. The color order is repeated in the project cards. If you'd like to see what color your name is, check out <a href="synesthesia.me">synesthesia.me</a> 
+		<br><br>
+		<b>Photos:</b> ResMem is a machine learning model for predicting the intrinsic memorability of an image. Each image was tested, which determined both the cover image and order of each project. The most visually memorable project is presented first. If you'd like to test your own images, check out <a href="https://brainbridgelab.uchicago.edu/resmem/">ResMem</a>
+		<br><br>
+		<b>Type:</b> Orbitron & Raleway
+    <br><br>
+		<b>Layout & Code:</b> Based on Rachael Smith's "Expanding Card Page Transition Effect"
+	</div>
+</div>
+
+<div class="container">
+<!-- card J -->
+  <div class="card-column column-0">
+    <div class="card card-color-J">
+      <div class="border"></div>
+      <img src="img/4x4_photoshoot.jpg" />
+      <h1>Art & <br>Creative Direction</h1>
+			<p>I started as a Sr. Designer at eBay on Nov 29, 2010. Our in-house team was responsible for Relationship Marketing in North America. At the time, I was creating the homepage billboards. I art directed product photo shoots with our photographer Chris Roche in Berkley. I’d then combine the products with stock photography, like digital matte painting for movies, to extend the background and to tell a story.
+<br><br>
+We primarily supported verticals (Fashion, Motors, Tech, etc.), programs (Bucks, MBG, Deals, etc.), and Integrated Campaigns (Valentines, Mother’s Day, Dads & Grads, Back-to-school, and Holiday).
+				<br><br>
+		<img class="hide" src="img/4x4_HPBB.jpg">
+			<br>
+			Back then our business-as-usual font was Trebuchet, so we took the opportunity to differentiate Integrated Campaigns, the   precursor of Retail Moments. I was responsible for mood boards, color palettes, and type treatments.
+      <br><br>
+The campaign style guides would eventually go to an agency, but they never quite gave us what we needed for channel marketing. We always had to interpret the kit-of-parts into something that would meet our performance needs. Sometimes the guides were too channel specific, focusing on display, or they’d only consider out-of-home. For the longest time Brand = TV commercials.
+			<br>
+			<img class="hide" src="img/BTS_HPBB.jpg">
+			<br>
+			When the MFBB (Multi-frame billboard) was introduced, my art direction changed to look like a staged “store window”. Product images performed better than lifestyle, with Free Shipping being the focus of most headlines.
+      <br>
+		<img class="hide" src="img/HPBB_1b.jpg">
+			<br>
+		In additionn to the homepage billboard, I was responsible for a site decoration called the “Doodle”. Similar to Google’s Doodle, it originated as a placement to showcase the brand's personality. However, it eventually became just another marketing traffic driver on the site.
+      <br><br>
+        I went on to be a design lead with three designers reporting to me: Joseph, Mauricio, and Forrest. I coached them and provided creative direction. I’m quite proud of having been a small part of their design journey. I eventually handed off the Doodle and Integrated Campaigns to Joseph Martinez. He went on to work for Shutterfly and Adobe. Mauricio Rams went on to work for Nest and Intuit. And Forrest Lui went on to work at Electronic Arts and Hogarth Worldwide.
+      <br>
+		<img class="hide" src="img/doodles.jpg">
+			<br>
+        In 2013, based on McKinsey’s recommendation, we switched from in-house to an agency model. With Triad as our agency, I continued to do creative and art direction, with the addition of agency management. Ephriam Joseph, my long time agency collaborator, always sat on-site in San Jose so I could provide design guidance.
+        <br><br>
+        I broadened my scope from Onsite to Email. Our font was Univers, in ALL CAPS, and we only had access to the 4 colors from the logo and a set of gray tones. With these limitations, we did user research to redefine the look and feel of emails. With our agency partners, we created three variations that we took into qualitative testing. <!-- This Sneakerheads email was one of the first to use the new design based on the testing results.-->
+       <br>
+		<img class="hide" src="img/email_redesign.jpg">
+			<br>
+        When Global Growth was created, we were still doing the NA Marketing creative and added support for global campaigns (US, UK, DE, AU, FR, IT, ES, CA). In addition to Onsite and Email, we increased our scope to include Display and Social. 
+      <br><br>
+We inherited 10 agencies in addition to Triad, including Feed and Moskito. We subsequently reduced to a single agency (Feed) with a cost savings of ~$9M (from 13M down to 4M). In addition to the decrease in cost, we provided an increase in scale, efficiency, and performance. We also managed to transition the work without a gap in service.
+      <br><br>
+During this time I helped design the first email campaign to ever receive any external recognition. Our New User Experience (NUE) campaign was a series of emails sent on days 2, 4, 6, 8, 10, and 12 after registration. The objective was to onboard customers with educational content, highlighting the various features, programs, and options eBay had to offer.
+      <br>
+		<img class="hide" src="img/NUE.jpg">
+			<br>
+		 </p>
+    </div>
+<!-- card R -->
+    <div class="card card-color-R">
+      <div class="border"></div>
+      <img src="img/Day3.jpg" />
+      <h1>Design <br>Sprint</h1>
+      <p>I participated in a weeklong design sprint, collaborating across departments to consider the end-to-end customer experience for Frequency Drivers based on a suggested Next Best Action.
+        <br><br>
+        Based on a frequency regression analysis, a set of customer actions were identified to increase the probability of repeat purchases. The result would be 1 in 10 active buyers making one extra purchase a year, equal to <b>$480 million in GMB.</b>
+        <br>
+		<img class="hide" src="img/Day1.jpg">
+			<br>
+        <b>Day 1: Define the Problem</b> - There were over half a billion “fish in the barrel” in a 12-month period
+        <br>
+			&ensp; <b>&#8226;</b>&nbsp; 29 million churned buyers who still visit<br>
+			&ensp; <b>&#8226;</b>&nbsp; 53 million registered but didn’t buy<br>
+			&ensp; <b>&#8226;</b>&nbsp; ~490 million unregistered visitors<br>
+        <br>
+        The goal was to coach these customers towards long term loyalty and to encourage them to take the next step, either towards conversion of their current purchase journey or inspiration towards their next journey with delightful and educational moments.
+        <br>
+		<img class="hide" src="img/Day2.jpg">
+			<br>
+        <b>Day 2: Discovery</b> - Conducted research into existing solutions and reviewed the competitive landscape. The findings were organized by assumptions, hypothesis, insights, and ideas. Personas and customer journey maps were established from the findings.
+        <br>
+		<img class="hide" src="img/Day3.jpg">
+			<br>
+       <b>Day 3: Ideation</b> - The customer journey was revisited to determine where, when, and how to “nudge”. 65 ideas were generated and categorized (now, next, and future), and prioritized (viability, feasibility, and desirability).
+        <br>
+		<img class="hide" src="img/Day4.jpg">
+			<br>
+        <b>Day 4: Design</b> - The top 15 ideas were used for low-fidelity designs, the top 5 were decided by votes, and then were recreated as high-fidelity designs for user testing.
+        <br>
+		<img class="hide" src="img/Day5.jpg">
+			<br>
+        <b>Day 5: User Testing</b> - Conducted a remote usability study with 12 shoppers that were divided into 3 segments: new or return buyers, frequent, and infrequent. Half identified as sellers and half as buyers. The average age was 33 with an average annual income between $50,000 - $74,999.
+      </p>
+    </div>
+<!-- card E -->
+       <div class="card card-color-E">
+      <div class="border"></div>
+      <img src="img/c100x_laptop.jpg"/>
+      <h1>Creative Generator</h1>
+			<p>I helped build a proof of concept to increase creative production at scale.
+        <br><br>
+Originally the idea didn’t make the engineering cutline when it was pitched. However, leadership believed in it enough and allowed us to use an external partner to build a proof of concept. The goal was to increase creativity at scale in support of a separate, but connected, workstream that used machine learning to optimized marketing campaigns. The problem was that there weren’t enough variations within existing campaigns to break through the noise. We were the solution.
+        <br><br>
+		<video class="hide" alt="Creative Generator" controls="controls" muted="muted" poster="img/Generator.jpg" preload="true" style="width: 100%; height: auto;"><source src="videos/c100X_Video_Final.mp4" type="video/mp4" /></video>
+			  <br>
+Creative Generator utilized 3 seed elements: copy, color, and photography. These were combined for reusable assets across multiple channels, which included variables for optimization. These seed elements could be either constrained or unconstrained with guardrails based on the objective. Any or all seed elements could be used as a multiplier to easily meet or surpass the ~100 variations needed for analysis.
+        <br><br>
+        With our success, eBay adopted the Creative Generator in-house and established a designated team including a PO, UX designer, engineers, and additional technical staff to integrate the tool into a larger platform called the Unified Experience.
+        <br><br>
+        <i>Seed elements</i>
+        <br>
+        <b>&#8226;&nbsp;Copy:</b> Small, medium, and large versions to fit a variety of channels. Copy for tonal modulation, between captivating, considerate, and straightforward<br>
+        <b>&#8226;&nbsp;Color:</b> Semi-automated color picker based on a dominant and accent selection for color layering (color on color) and color blocking (color next to color)<br>
+<b>&#8226;&nbsp;Photography:</b> Dynamic cropping and focal point detection for multiple aspect ratios
+        <br>
+        <img class="hide" src="img/color_picker.jpg">
+        <br>
+        <b>Color picker</b>
+        <br>
+        We built an automated method for picking colors in addition to the manual process. Colors would be extracted from any uploaded image, ranked based on percent of use, and hex values would be compared against an array of brand approved colors. Once the dominant brand color was identified, it could be run through the same method of the manual process. Rules were in place for sufficient contrast for accessibility when placing color on color (e.g. text color on a background color) and brand guidelines on the usage of color next to color. The logic included monochromatic and neighboring color schemes with an order of tints and shades for a given hue.
+        <br>
+        <img class="hide" src="img/color_picker.jpg">
+        <br>
+        <b>Content aware, focal point image cropping</b>
+        <br>
+        We included functionality for dynamic cropping to account for multiple aspect ratios. Crops for extreme image sizes proved successful to scale a single image across most placements. Sizes like the long and narrow image used for a display leaderboard, the tall and narrow image used for a display skyscraper, the almost square image of a display MREC, and the largest rectangular image size used on the top placement of the homepage.
+      </p>
+    </div>
+<!-- card J x2 -->
+       <div class="card card-color-J">
+      <div class="border"></div>
+      <img src="img/Espresso3.jpg"/>
+      <h1>Espresso</h1>
+			<p>I helped define eBay’s daily flagship buyer email, focused on inspiring new purchase journeys based on a customer’s latent needs. It generated <b>$327 million in GMB</b> in 2020.
+        <br><br>
+        eBay is a big marketplace which can sometimes be overwhelming to navigate. Espresso helps by doing the tedious work of search and discovery so a customer can peruse results tailored to their interests.
+        <br>
+        <img class="hide" src="img/Espresso1.jpg">
+        <br>
+        Espresso originated in 2014 as an email to promote Limited-time Sales and Events. Additional content types were added over time. Once it was no longer one email type, but multiple, we looked at the competitive landscape to classify each section. This led to an update in the wireframe and type ramp to drive consistency through the variety of content.
+        <br>
+        <img class="hide" src="img/Espresso2.jpg">
+        <br>
+        We wanted to scale the email to a larger audience and across regions. A human effort was undertaken to curate content from eBay so that we could determine what the machine needed to consider. Based on audience insights from the brand, four personas were created that represented aspects of Self-Expressionist and Treasure Hunters. This showed how the same framework could be a tailored experience for each person’s individual customer journey.
+        <br><br>
+In addition to determining what would be shown next, based on-site behavior, we leveraged additional inputs that weren’t tied to purchase intent. Research was conducted in US, UK, and DE with eBay customers to understand the relevance of existing modules and content and to discover new content that users would like to see.
+        <br>
+        <img class="hide" src="img/Espresso3.jpg">
+        <br>
+        By 2016, we created a vision deck which included ideas such as a dashboard with anchor links, using a card-based design system, content level explicit feedback (like/dislike), add to cart functionality, added personalization, and a daily theme strategy.
+        <br>
+        <img class="hide" src="img/Espresso4.jpg">
+        <br>
+        In 2018, the email moved from single channel to multi-channel. We redesigned the wireframe to mimic the homepage with three banner placements: top, middle, and bottom. Single item/single click cards were replaced with 4-item recommendations. This enabled channel parity and content to be dynamically consumed from the on-site experience.
+        <br><br>
+Additionally, we enabled a flexible layout for module ordering. This accomplished two things, it kept the content fresh since the email was sent daily and it allowed an additional layer of personalization. If you didn’t have enough activity to populate a set of item recommendations, we could easily replace the algo type. Perhaps you browsed less than three items in the past month, but you did make a purchase. Since you didn’t qualify for Recently Viewed Items to promote an existing purchase journey, we could replace it with Similar Items based on your last purchase to encourage a new purchase journey.
+        <br>
+        <img class="hide" src="img/Espresso5.jpg">
+        <br>
+        Today Espresso is evolving again. It is currently being tested on the Unified Experience Platform as a blended canvas with a conversion email called Purchase Assistant. In addition to the module ordering, Espresso and Purchase Assistant content can be combined or suppressed based on science models.
+         </p>
+    </div>
+<!-- card E
+       <div class="card card-color-E">
+      <div class="border"></div>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/deathtostock-01.jpg"/>
+      <h1>Creative Generator</h1>
+			<p>fingers crossed this worked</p>
+    </div> -->
+<!-- right side -->
+  </div>
+<!-- card A (right)-->
+  <div class="card-column column-1">
+    <div class="card card-color-A">
+      <div class="border"></div>
+      <img src="img/Palm.jpg" />
+      <h1>Agency <br>Work</h1>
+			<p>In 2007 I started working at an interactive design agency called Design Reactor.
+      <br>
+		<img class="hide" src="img/Ruby_ROM.jpg">
+			<br>
+        <b>AMD Ruby ROM</b>
+        <br>
+        This was a disc containing an exclusive screensaver and desktop wallpaper of ATI’s red-haired CGI character Ruby. The disc also included demo games for Call of Juarez, Stranglehold, and a game client for an online RPG called Dungeon Runners.
+        <br><br>
+        I leveraged provided images for each screen and built the animated navigation in Flash.
+        <br>
+		<img class="hide" src="img/Turkey_Journey.jpg">
+			<br>
+        <b>Disney's Turkey Journey</b>
+        <br>
+Every year around Thanksgiving, the President of the United States Pardons a turkey. Many are familiar with  the ​​“National Thanksgiving Turkey,” but few know what happens to the turkey after its clemency. From 2005 to 2009, the birds traveled to either Disneyland or Disney World where they became the honorary grand marshals of Disney's Thanksgiving Day Parade. This was my pitch for a display ad to educate and entertain people about Disney’s involvement in the tradition.
+        <br>
+		<img class="hide" src="img/HP_Pod.jpg">
+			<br>
+       <b>HP POD</b>
+        <br>
+        Short for Performance Optimized Datacenter, this shipping container, either 20 or 40 feet in length, was shipped with preconfigured racks, cabling, and equipment for power and cooling. I was responsible for the design of the microsite presenting the features and benefits of these modular data centers.
+       <!--  <br>
+		<img class="hide" src="img/Mojo_Sports.jpg">
+			<br> -->
+        <br>
+		<img class="hide" src="img/Disney_Celebration.jpg">
+			<br>
+        <b>Disney's What Will You Celebrate?</b>
+        <br>
+        I helped design a landing page as part of the "What Will You Celebrate?" campaign for Disney Parks in 2009. Ivan Kandi was the lead designer and I was responsible for extending the look and feel into downloadable invitations, a video player, and flash interaction for expand and collapse preview tiles and the “pixie dust” coded animation for the slider navigation. 
+        <br>
+		<img class="hide" src="img/AMD_Game.jpg">
+			<br>
+        <b>AMD Game!</b>
+        I was responsible for updating the homepage graphics. I modified assets, provided from various game companies, into a billboard that extended beyond the frame to include the overflow creating a wallpaper effect. 
+        <br>
+		<img class="hide" src="img/Cisco_Live.jpg">
+			<br>
+        <b>Cisco Live!</b>
+        <br>
+This was my design pitch for the microsite of the annual multi-day conference which features the latest Cisco news, keynotes, in-depth technical sessions and product demos. They aim to ignite creativity, deliver practical know-how, and accelerate the connections that fuel the digital future.
+      </p>
+    </div>
+<!-- card R (right) -->
+    <div class="card card-color-R">
+      <div class="border"></div>
+      <img src="img/xchannel.jpg" />
+      <h1>Creative <br>& Content <br>Strategy</h1>
+      <p>
+        I created a framework for content strategy that allowed for evolution of the brand and flexibility for future marketing tech tool requirements. The result was a consistent and cohesive brand expression that improved our customers’ overall experience.
+      <br><br>
+		<video class="hide" alt="Creative & Content Strategy" controls="controls" muted="muted" poster="img/after.jpg" preload="true" style="width: 100%; height: auto;"><source src="videos/CSS Featured Video.mp4" type="video/mp4" /></video>
+			<br>
+We had a problem; eBay customers were overwhelmed by a disjointed experience. The brand expression and content strategy were inconsistent across channels, which eroded trust. An audit was conducted by McCann in 2019. As a result, 12 key areas were identified for improvement.
+      <br><br>
+In addition to the initial audit, we also conducted extensive user research to gain a deeper understanding of our customer’s pain points. With this added context, we developed an approach to Conversational Marketing and design to meet their needs. We drove one-to-one interactions, leveraging human conversation through different touchpoints and across all communications. This allowed us to engage, learn about, and build stronger relationships with our customers.
+        <br>
+			<img class="hide" src="img/audit.jpg">
+			<br>
+        <b>12 key areas to improve the customer experience</b>
+        <br>
+        1.&nbsp;&nbsp;&nbsp;Undifferentiated templates that look like repeats<br>
+        2.&nbsp;&nbsp;&nbsp;No clear hierarchy of information<br>
+        3.&nbsp;&nbsp;&nbsp;Cluttered layouts<br>
+        4.&nbsp;&nbsp;&nbsp;Overly dense layouts with no breathing room<br>
+        5.&nbsp;&nbsp;&nbsp;Ambiguous calls to actions without clear expectations<br>
+        6.&nbsp;&nbsp;&nbsp;No clear brand messaging where the brand is watered down<br>
+        7.&nbsp;&nbsp;&nbsp;Disingenuous emoticons in email subject lines/push that are off brand<br>
+        8.&nbsp;&nbsp;&nbsp;Comms are too frequent and undistinguished for new or returning customers<br>
+        9.&nbsp;&nbsp;&nbsp;Excessive content that ultimately gets clipped-off or obstructed<br>
+        10.&nbsp;Competing messages that confuse customers<br>
+        11.&nbsp;Irrelevant content with little apparent targeting<br>
+        12.&nbsp;Deal focused vs. relationship focused<br>
+			<img class="hide" src="img/tone.jpg">
+			<br>
+        <b>Conversational Marketing tenets</b>
+        <br>
+        <b>&#8226;</b>&nbsp;Conversation is inherently multimodal—it includes what is said, seen, heard, and felt<br>
+        <b>&#8226;</b>&nbsp;The tone of voice in conversations fluctuates to communicate the meaning behind the message<br>
+        <b>&#8226;</b>&nbsp;Taking turns in a conversation keeps it in sync<br>
+        <b>&#8226;</b>&nbsp;A good conversation participant keeps track of the conversation<br>
+      </p>
+      
+    	</div>
+	<!-- card D (right)-->
+    <div class="card card-color-D">
+      <div class="border"></div>
+      <img src="img/GET.jpg" />
+      <h1>Global <br>Email Template</h1>
+			<p>Lead the creation of email modules with a common HTML and CSS code base to maintain consistency from design into development, resulting in a <b>30% reduction in development time</b> and a <b>50% reduction in QA time.</b>
+				<br><br>
+		<video class="hide" alt="Global Email Template" controls="controls" muted="muted" poster="img/modules.jpg" preload="true" style="width: 100%; height: auto;"><source src="videos/GET 3.22.mp4" type="video/mp4" /></video>
+			<br>
+			The modules were originally managed and maintained as a standalone package, including files for email developers and corresponding design files. More recently it was added to an internal tool called Message Studio Library. As of October 2021, the template was used in <b>~868 million emails</b> sent to eBay customers.
+			<br>
+			<img class="hide" src="img/dark_mode.jpg">
+			<br>
+	<i>Enhancements in 3.2 release</i>
+        <br>
+			<b>&#8226;&nbsp;Improved Accessibility:</b> All modules follow the WCAG guidance and were approved by an accessibility specialist. This includes a wide range of accessibility &ndash; from those with visual impairments to those who rely on screen readers or the tab function for navigation.<br>
+		<b>&#8226;&nbsp;Enables Gmail promotion tab:</b> Allows an additional preview showcasing the eBay logo and supporting image. Special offer, deal, coupon code, or urgency messages can be included.</br>
+      <b>&#8226;&nbsp;Support for dark mode</b>
+  <br>
+		<img class="hide" src="img/gmail.jpg">
+			<br>
+		<b>Additional benefits</b>
+      <br>
+      <b>&#8226;</b>&nbsp; Aligns with the eBay design system<br>
+      <b>&#8226;</b>&nbsp; Flexible modules free creative potential<br>
+      <b>&#8226;</b>&nbsp; Enables reusable content across campaigns<br>
+      <b>&#8226;</b>&nbsp; Easily localized per region<br>
+      <b>&#8226;</b>&nbsp; Efficiency and ease of development<br>
+      <b>&#8226;</b>&nbsp; Improved QA process and documentation<br>
+      <b>&#8226;</b>&nbsp; Mobile responsive with fluid design<br>
+      <b>&#8226;</b>&nbsp; Retina display optimized<br>
+      <b>&#8226;</b>&nbsp; Compatible with over 70 email clients in desktop, devices, and webmail<br>
+		 </p>
+    	</div>
+	<!-- card A x2 (right)-->
+    <div class="card card-color-A">
+      <div class="border"></div>
+      <img src="img/DVF1.jpg" />
+      <h1>Interactive <br> Display</h1>
+      <p>
+        Placeholder text
+        <br>
+		      <img class="hide" src="img/DVF2.jpg">
+			  <br>
+         Placeholder text
+        <br>
+		      <img class="hide" src="img/DVF3.jpg">
+			  <br>
+        Placeholder text <a href="https://www.vogue.com/article/slideshow-fashions-night-out-2010">Fashion's Night Out</a>
+        <br>
+		      <img class="hide" src="img/DVF4.jpg">
+			  <br>
+      </p>
+    	</div>
+	<!-- card L (right)
+    <div class="card card-color-L">
+      <div class="border"></div>
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/deathtostock-03.jpg" />
+      <h1>Art Direction</h1>
+    	</div>-->
+<!-- end -->
+	</div>
+</div>
+
+<div id="cover" class="cover"></div>
+
+<div id="open-content" class="open-content">
+  <a href="#" id="close-content" class="close-content"><span class="x-1"></span><span class="x-2"></span></a>
+  <img id="open-content-image" src="" />
+  <div class="text" id="open-content-text">
+  </div>
+</div>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+<script>
+function on(){
+	document.getElementById("overlay").style.display ="block";
+}
+
+function off(){
+	document.getElementById("overlay").style.display ="none";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css?family=Heebo:400,700");
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Heebo", system-ui;
+  text-shadow: 0px 1px 1px #7059e2;
+}
+
+a {
+  color: inherit;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+}
+/* button:focus, button:active, input:focus, input:active, select:focus, select:active, textarea:focus, textarea:active {
+  outline: 0;
+} */
+
+h1 {
+  margin: 0;
+}
+
+h3 {
+  margin: 4rem 0 3rem;
+}
+
+p {
+  margin-bottom: 2rem;
+}
+
+.wrapper {
+  margin: 4.5rem 1rem 0;
+  background-color: rgb(0, 0, 0);
+}
+/* 這塊地外面 */
+
+.card {
+  display: block;
+  width: 100%;
+  margin: auto;
+  max-width: 1200px;
+  background: #fafafa;
+  color: rgb(255, 0, 0);
+  border-radius: 0.8rem;
+  margin-bottom: 2rem;
+}
+/* 這塊裡面的字 */
+
+.card__header {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+.card__body {
+  padding: 5rem 7rem 7rem;
+  background-color: #a1a1a1;
+}
+/* ^這塊地背景色ˇ */
+@media screen and (max-width: 900px) {
+  .card__body {
+    padding: 5rem 2rem 7rem;
+  }
+}
+
+
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+@media screen and (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.grid {
+  flex: 1;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: relative;
+}
+@media screen and (max-width: 900px) {
+  .grid {
+    max-width: 100%;
+  }
+}
+
+.toggle {
+  max-width: 62px;
+  height: 32px;
+  background: #afa6db;
+  border-radius: 999px;
+  position: relative;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+/* 關起來的點的背景 */
+
+.toggle__handle {
+  height: 24px;
+  width: 24px;
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  transform: translateY(-50%);
+  background: rgb(255, 204, 101);
+  border-radius: 50%;
+  transition: all 300ms ease;
+}
+/* 關起來的點 */
+
+.toggle.is-on {
+  background: rgb(255, 164, 164);
+  transition: all 300ms ease;
+}
+/* 開啟後點的背景 */
+
+.toggle.is-on .toggle__handle {
+  left: 34px;
+  background: #a69ae0;
+  transition: all 300ms ease;
+}
+/* 開啟後的點 */
+
+.form-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+.form-item__control {
+  width: 40%;
+  text-align: right;
+}
+
+.control {
+  background: transparent;
+  color: inherit;
+  display: block;
+  width: 100%;
+  border-radius: 0.3rem;
+  padding: 0.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.control:hover, .control:focus {
+  background: #7059e2;
+  border-color: transparent;
+}
+
+
+.button {
+  border: 0;
+  background: white;
+  color: #9c88ff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  border-radius: 0.4rem;
+  padding: 0.6rem 1.4rem;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.button:hover, .button:focus {
+  background: #7059e2;
+  color: white;
+  transition: all 300ms ease;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-top: 3rem;
+}
+.buttons .button {
+  margin-left: 1rem;
+}
+
+.credits {
+  position: fixed;
+  width: 100%;
+  background: black;
+  color: white;
+  text-align: center;
+  bottom: 0;
+  padding: 0 1.5rem;
+}
+
+.link--dribbble {
+  color: #ea4c89;
+}
